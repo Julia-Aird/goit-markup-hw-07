@@ -217,15 +217,16 @@ width: 100%;
 
 .icon-technologiies::before {background-image: url(../images/technologies.svg);}
 
-.features-title {font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+.features-title {font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: var(--typical-letter-spacing);
     color: var(--second-text-color);
     margin-bottom: 8px;
 text-align: center;}
 
-.features-paragraph {font-size: 16px;
+.features-paragraph {font-weight: 500;
+    font-size: 16px;
     line-height: var(--typical-line-height);
     letter-spacing: var(--typical-letter-spacing);}
 
@@ -802,7 +803,13 @@ padding-bottom: 120px;}
 
     .features-item {flex-basis: calc((100% - 72px) / 4);}
 
-    .features-title {margin-top: 8px;}
+    .features-title {margin-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;}
+
+    .features-paragraph {font-weight: 400;}
+
 
     .container.container-mini {max-width: 1158px;}
 
