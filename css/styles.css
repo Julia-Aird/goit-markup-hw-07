@@ -43,6 +43,9 @@ margin-right: auto;}
 padding-top: 24px;
 padding-bottom: 24px;}
 
+.menu-icon {  }
+
+
 .hidden-title {position: absolute;
     width: 1px;
     height: 1px;
@@ -58,14 +61,28 @@ padding-bottom: 24px;}
 .header { border-bottom: 1px solid var(--corn-color);}
 
 .header-navigation {display: flex;
-align-items: center;}
+align-items: center;
+}
 
-.header-site-list {display: flex;}
+.menu-button  {margin-left: auto;
 
-.header-item:not(:last-child) {margin-right: 40px;}
+    background-color: transparent;
+    border: none;
+stroke: var(--second-text-color)}
 
-.header-container {display: flex;
-align-items: center;}
+.menu-button {}  
+
+.menu-button .icon-close {display: none;}
+.menu-button .is-open .icon-close {display: block;}
+.menu-button .is-open .icon-menu {display: none;}
+/* Навігація */
+
+.header-site-list {display: none;}
+
+
+
+/* Контакти */
+.header-nav-list {display: none;}
 
 /* Лого */
 
@@ -85,54 +102,11 @@ transition: color var(--transition);}
 .header-logo:focus,
 .header-logo:active {color: var(--accent-color)}
 
-/* Навігація */
 
-.header-link {font-weight: 500;
-    font-size: 16px;
-    line-height: var(--typical-line-height);
-    letter-spacing: var(--typical-letter-spacing);
-    color: var(--second-text-color);
-transition: color var(--transition);
-}
 
-.header-link:hover,
-.header-link:focus,
-.header-link:active { color: var(--accent-color);}
 
-.current {color: var(--accent-color);
-    position: relative;
-}
 
-.current::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.9px;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--hover-bgc);
-    border-radius: 2px;
-}
 
-/* Контакти */
-
-.header-adress-link {font-style: normal;
-font-size: 16px;
-line-height: var(--typical-line-height);
-letter-spacing: var(--typical-letter-spacing);
-color: var(--main-text-color);
-transition: color var(--transition);}
-
-.header-adress-link:hover,
-.header-adress-link:focus,
-.header-adress-link:active {color: var(--accent-color);}
-
-.header-nav-list {display: flex;}
-
-.header-adress {margin-left: auto;}
-
-.header-mail {margin-right: 40px;}
 
 /* .header-tel {} */
 
@@ -713,10 +687,14 @@ padding-bottom: 8px;}
 .online-form {
 flex-wrap: wrap;}
 
+/* MEDIA 1 */
+
 @media screen and (max-width: 1199px) { 
     .features-item::before {display: none;}
     .work {display: none;}
 }
+
+/* MEDIA 2 */
 
 @media screen and (min-width: 480px) {
     .container {max-width: 428px;}
@@ -737,8 +715,12 @@ flex-wrap: wrap;}
   .hero {background-image: var(--linear-gradient), url(../images/hero-tablet-2x.jpg);}
 }
 
+
+
+
 }
 
+/* MEDIA 3 */
 
 @media screen and (min-width: 768px) {
     .container {max-width: 768px;}
@@ -814,8 +796,63 @@ height: 436px;}
   .hero {background-image: var(--linear-gradient), url(../images/hero-office-2x.jpg);}
 }
 
+.header-site-list {display: flex;}
+
+.header-item:not(:last-child) {margin-right: 40px;}
+
+.header-container {display: flex;
+align-items: center;}
+/* Навігація */
+
+.header-link {font-weight: 500;
+    font-size: 16px;
+    line-height: var(--typical-line-height);
+    letter-spacing: var(--typical-letter-spacing);
+    color: var(--second-text-color);
+transition: color var(--transition);
 }
 
+.header-link:hover,
+.header-link:focus,
+.header-link:active { color: var(--accent-color);}
+.current {color: var(--accent-color);
+    position: relative;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.9px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--hover-bgc);
+    border-radius: 2px;
+}
+/* Контакти */
+
+.header-adress-link {font-style: normal;
+font-size: 16px;
+line-height: var(--typical-line-height);
+letter-spacing: var(--typical-letter-spacing);
+color: var(--main-text-color);
+transition: color var(--transition);}
+
+.header-adress-link:hover,
+.header-adress-link:focus,
+.header-adress-link:active {color: var(--accent-color);}
+
+.header-nav-list {display: flex;}
+
+.header-adress {margin-left: auto;}
+
+.header-mail {margin-right: 40px;}
+
+
+}
+
+/* MEDIA 4 */
 
 @media screen and (min-width: 1200px) {
     .container {max-width: 1158px;}
