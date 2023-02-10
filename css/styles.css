@@ -150,6 +150,12 @@ background-position: center;
 /* outline: 2px solid teal; */
 background-image: var(--linear-gradient), url(../images/hero-mobile.jpg);}
 
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {background-image: var(--linear-gradient), url(../images/hero-mobile-2x.jpg);}
+}
 
 .hero-title {font-size: 36px;
 line-height: 1.11;
@@ -158,6 +164,7 @@ color: var(--main-white-color);
 margin-bottom: 72px;
 margin-left: auto;
 margin-right: auto;}
+
 
    /* Кнопка замовлення */
 
@@ -723,6 +730,13 @@ flex-wrap: wrap;}
 
 .hero {background-image: var(--linear-gradient), url(../images/hero-tablet.jpg);}
 
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {background-image: var(--linear-gradient), url(../images/hero-tablet-2x.jpg);}
+}
+
 }
 
 
@@ -793,6 +807,12 @@ height: 436px;}
 
 .hero {background-image: var(--linear-gradient), url(../images/office.jpg);}
 
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {background-image: var(--linear-gradient), url(../images/hero-office-2x.jpg);}
+}
 
 }
 
