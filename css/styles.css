@@ -10,6 +10,7 @@
     --logo-grey-color: #AFB1B8;
     --typical-line-height: 1.5;
     --typical-letter-spacing: 0.02em;
+    --linear-gradient: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 body {background-color: var(--main-white-color);
@@ -139,28 +140,24 @@ transition: color var(--transition);}
 
 .hero {background-color: var(--second-text-color);
     text-align: center;
-padding-top: 188px;
-padding-bottom: 188px;
+padding: 112px 55px;
 max-width: 1440px;
-min-height: 600px;
 margin-left: auto;
 margin-right: auto;
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 /* outline: 2px solid teal; */
-background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-url(../images/office.jpg);}
+background-image: var(--linear-gradient), url(../images/hero-mobile.jpg);}
 
 
-.hero-title {font-size: 56px;
-line-height: 1.07;
+.hero-title {font-size: 36px;
+line-height: 1.11;
 letter-spacing: var(--typical-letter-spacing);
 color: var(--main-white-color);
-margin-bottom: 48px;
+margin-bottom: 72px;
 margin-left: auto;
-margin-right: auto;
-max-width: 500px;}
+margin-right: auto;}
 
    /* Кнопка замовлення */
 
@@ -709,12 +706,12 @@ padding-bottom: 8px;}
 .online-form {
 flex-wrap: wrap;}
 
-@media screen and (max-width: 1439px) { 
+@media screen and (max-width: 1199px) { 
     .features-item::before {display: none;}
     .work {display: none;}
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 480px) {
     .container {max-width: 428px;}
     
 .features-item:nth-child(4n + 4) { margin-bottom: 0;}
@@ -722,15 +719,9 @@ flex-wrap: wrap;}
 .customers-item {flex-basis: calc((100% - 16px) / 2);}
 .container.container-mini {max-width: 294px;}
 
+.hero-title {width: 319px;}
 
-
-/* .footer-subscribe {margin-left: 0;}
-.footer-logo {
-    margin-left: 75px; 
-}
-
-.footer-soc-title {text-align: center;
-margin-top: 2px;} */
+.hero {background-image: var(--linear-gradient), url(../images/hero-tablet.jpg);}
 
 }
 
@@ -791,12 +782,22 @@ flex-wrap: nowrap;}
 .online-input {margin-bottom: 0;
 width: 264px;}
 
+.hero-title {width: 496px;
+font-size: 56px;
+line-height: 1.07;
+margin-bottom: 40px;}
+
+.hero {padding: 112px 137px 108px 137px;
+
+height: 436px;}
+
+.hero {background-image: var(--linear-gradient), url(../images/office.jpg);}
+
+
 }
 
-/* .haha{flex-basis: calc((100% - 24px) / 2);}
-} */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .container {max-width: 1158px;}
 .features {padding-top: 120px;
 padding-bottom: 120px;}
@@ -835,5 +836,12 @@ gap: 0;}
 .footer-subscribe {margin-left: 80px;}
 
 .footer-list {margin-right: 120px;}
+
+.hero {padding-top: 188px;
+    padding-bottom: 188px;
+    height: 600px;
+}
+
+.hero-title {margin-bottom: 48px;}
 
 }
