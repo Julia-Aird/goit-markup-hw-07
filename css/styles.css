@@ -106,7 +106,7 @@ padding-left: 40px;}
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: auto;}
+    overflow-y: auto;}
 
 .mob-menu-link{font-weight: 700;
 font-size: 36px;
@@ -121,7 +121,7 @@ transition: color var(--transition);}
 .mob-menu-link:focus,
 .mob-menu-link:active { color: var(--accent-color);}
 
-.mob-menu-site-list {margin-bottom: 284px;}
+.mob-menu-site-list {margin-bottom: 64px;}
 
 .container-mob .mode-modal-close {margin-bottom: 16px;}
 
@@ -285,7 +285,6 @@ text-align: center;}
 padding-top: 96px;
 padding-bottom: 128px;}
 
-.team-list {}
 
 .team-title {margin-bottom: 72px;}
 
