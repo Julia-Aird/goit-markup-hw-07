@@ -33,7 +33,7 @@ width: 100%;}
 
 .no-scroll {overflow: hidden;}
 
-.container {
+.container { 
 padding-left: 15px;
 padding-right: 15px;
 margin-left: auto;
@@ -507,8 +507,10 @@ border-color: #404BBF;}
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
-    min-height: 576px;
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     background-color: #FCFCFC;
     border-radius: 4px;
     padding: 24px;
@@ -879,6 +881,10 @@ padding-bottom: 24px;}
 .menu-button {display: none;}
 
 .header-nav-list {display: flex}
+
+.modal {width: 408px;
+    max-height: 90%;}
+
 }
 
 /* media tablet header */
