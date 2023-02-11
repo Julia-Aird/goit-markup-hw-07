@@ -117,6 +117,14 @@ padding-left: 40px;}
     
 }
 
+.mob-menu > .container-mob {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
 .mob-menu-link{font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -164,7 +172,7 @@ transition: color var(--transition);}
 
 
 .mob-menu-tel {font-weight: 600;
-font-size: 36px;
+font-size: 26px;
 font-style: normal;
 line-height: 1.11;
 color: var(--accent-color);
@@ -188,7 +196,7 @@ color: var(--accent-color);
 .mob-soc-item {width: 40px;
     height: 40px;}
 
-.mob-soc-item:not(:last-child) {margin-right: 56px;}
+.mob-soc-item:not(:last-child) {margin-right: 28px;}
 
 .mob-soc-link {width: 100%;
     height: 100%;
@@ -812,6 +820,10 @@ flex-wrap: wrap;}
   .hero {background-image: var(--linear-gradient), url(../images/hero-tablet-2x.jpg);}
 }
 
+.mob-menu-tel {
+font-size: 36px;}
+
+.mob-soc-item:not(:last-child) {margin-right: 56px;}
 
 
 }
