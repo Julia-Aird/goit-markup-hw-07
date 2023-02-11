@@ -749,6 +749,8 @@ flex-wrap: wrap;}
 font-size: 36px;}
 
 .mob-soc-item:not(:last-child) {margin-right: 56px;}
+.modal {width: 408px;
+
 }
 
 /* MEDIA TABLET */
@@ -881,7 +883,7 @@ padding-bottom: 24px;}
 
 .header-nav-list {display: flex}
 
-.modal {width: 408px;
+.modal {
     max-height: 90%;}
 
 }
