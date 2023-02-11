@@ -507,7 +507,7 @@ border-color: #404BBF;}
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     width: 90%;
-    height: 90%;
+    max-height: 90%;
     overflow-y: scroll;
     scroll-behavior: smooth;
     background-color: #FCFCFC;
